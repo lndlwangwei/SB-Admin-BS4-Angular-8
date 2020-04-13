@@ -1,0 +1,10 @@
+<div class="alert-wrapper" *ngIf="alert.alerts?.length>0">
+    <div role="alert" class="alert alert-primary alert-{{alert.type}} alert-dismissible" *ngFor="let alert of alert.alerts;let $index=index">
+        <button aria-label="Close" class="close ng-star-inserted" type="button" on-click="closeAlert(alert)">
+            <span aria-hidden="true">×</span>
+        </button>
+        <i class="icon-{{alert.type}}"></i>
+        <span [innerHTML]="alert.message"></span>
+    </div>
+</div>
+

@@ -1,0 +1,55 @@
+:host {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: -25%;
+    z-index: 999999;
+    border-radius: 0 !important;
+    min-width: 50%;
+    max-width: 50%;
+    .alert i {
+        font-size: 16px;
+    }
+
+    .alert-dismissible .close {
+        right:-0.5em;
+    }
+
+    .alert {
+        padding-right:2em;
+    }
+
+    .icon-warning,
+    .icon-info,
+    .icon-critical,
+    .icon-question {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+    }
+
+    .icon-warning:before {
+        content: "\f071"
+    }
+
+    .icon-info:before {
+        content: "\f058"
+    }
+
+    .icon-critical:before {
+        content: "\f071"
+    }
+
+    .icon-question:before {
+        content: "\f059"
+    }
+
+
+}
+
+
+
